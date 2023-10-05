@@ -25,6 +25,11 @@
     color: #FFF;
     font-family: 'poppins', sans-serif;
 }
+.btn-1:hover{
+    background-color:whitesmoke;
+    color: #2C49FE;
+    font-family: 'poppins' , sans-serif;
+}
 
 .font-1 {
     color: #2C49FE;
@@ -83,6 +88,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+    max-width: 857px;
+    opacity: 0.6;
     /* 24px */
 }
 
@@ -110,24 +117,23 @@
 }
 
 .font-9 {
-    width: 148px;
-    height: 55px;
     color: #666;
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    max-width: 163px;
+    height: 55px;
+    flex-shrink: 0;
 }
 
 .font-10 {
-    color: #000;
-    text-align: center;
+    color: #5E5F66;
     font-family: 'Poppins', sans-serif;
     font-size: 36px;
-    font-style: normal;
     font-weight: 600;
-    opacity: 0.6;
+
 }
 
 .font-11 {
@@ -150,6 +156,11 @@
     /* 72px */
 }
 
+.outline {
+    outline: 0;
+    border: none;
+}
+
 .font-13 {
     color: #000;
     font-family: 'Poppins', sans-serif;
@@ -161,22 +172,22 @@
     opacity: 0.6;
 }
 
-.card {
-    width: 270px;
-    height: 138px;
-    flex-shrink: 0;
+.card-1 {
+    max-width: 322px;
+height: 138px;
+flex-shrink: 0;
     border-radius: 20px;
     background: #FFF;
     box-shadow: 0px 8px 35px 0px rgba(0, 0, 0, 0.10);
 }
 
 .card-2 {
-    width: 171px;
-    height: 131px;
+    max-width: 171px;
+    height: 138px;
     flex-shrink: 0;
     border-radius: 20px;
-    cursor: pointer;
-    background-color: #EAEDFF;
+
+    background: #EAEDFF;
 
 }
 
@@ -193,6 +204,7 @@
     border-radius: 35px;
     border: 1px solid #9CA1BE;
     background: #FFF;
+    padding: 5px;
 }
 
 .btn-3 {
@@ -205,6 +217,17 @@
     border-radius: 36px;
     background: #2C49FE;
     border: none;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    /* 30px */
+}
+.btn-3:hover{
+    background-color: whitesmoke;
+    color: #2C49FE;
 }
 
 .box {
@@ -270,6 +293,7 @@ svg {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+    opacity: 0.6;
     /* 24px */
 }
 
@@ -290,17 +314,18 @@ svg {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    /* 24px */
+    opacity: 0.6;
 }
 
 .font18 {
+    max-width: 553px;
     color: #000;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    /* 24px */
+    opacity: 0.6;
 }
 
 .font-19 {
@@ -319,13 +344,23 @@ svg {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    /* 24px */
+    opacity: 0.6;
 }
 
 .bor {
     border-radius: 30px;
     border: 1px solid rgba(0, 0, 0, 0.20);
     background: #FFF;
+}
+
+.font-21 {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 346px;
 }
 
 .box-6 {
@@ -354,6 +389,26 @@ svg {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.footer-heading {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+input[type="checkbox"]:checked+.sm {
+    position: fixed;
+    right: 0;
+}
+
+.display {
+    position: fixed;
+    z-index: 3;
+    right: 10px;
 }
 
 @media (min-width:992px) {
@@ -386,7 +441,7 @@ svg {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        background-color: red;
+        background-color: #FFFFFF;
         position: fixed;
         top: 0;
         right: -100%;
@@ -398,12 +453,24 @@ svg {
 
 }
 
-input[type="checkbox"]:checked+.sm {
-    right: 0;
+
+@media (max-width:768px) {
+    .box-3 {
+        width: 100%;
+        height: 150px;
+
+        flex-direction: column;
+    }
+
 }
 
-.display {
-    position: fixed;
-    z-index: 3;
-    right: 10px;
+@media (max-width:576px) {
+
+    .font-1 {
+        font-size: 32px;
+    }
+
+    .font-2 {
+        font-size: 32px;
+    }
 }
